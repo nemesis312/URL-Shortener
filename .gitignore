@@ -12,7 +12,6 @@ dist/
 tmp/
 temp/
 coverage/
-docker-compose.override.yml
 
 # ========== BACKEND (.NET) ==========
 backend/bin/
