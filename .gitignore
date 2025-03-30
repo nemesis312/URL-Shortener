@@ -1,0 +1,48 @@
+# ========== GLOBAL ==========
+*.log
+*.env
+.env.*
+*.swp
+*.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+dist/
+tmp/
+temp/
+coverage/
+docker-compose.override.yml
+
+# ========== BACKEND (.NET) ==========
+backend/bin/
+backend/obj/
+backend/*.user
+backend/*.suo
+backend/.vs/
+backend/*.db
+backend/Properties/launchSettings.json
+
+# ASP.NET secrets
+backend/secrets.json
+
+# Rider
+backend/.idea/
+
+# ========== FRONTEND (Angular) ==========
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.env
+frontend/.env.*
+
+# ========== DOCKER ==========
+**/.docker/
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.override.yml
+**/pgdata/
+
+# ========== OS-SPECIFIC ==========
+**/.DS_Store
+**/Thumbs.db
