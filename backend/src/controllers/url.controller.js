@@ -27,7 +27,6 @@ async function redirectToOriginal(req, res) {
       return res.status(404).json({ message: "Short URL not found" });
     }
 
-    // Optional: puedes sumar el contador de clics aquí
     await db("short_urls")
       .where({ short_code: shortCode })
       .increment("clicks", 1);

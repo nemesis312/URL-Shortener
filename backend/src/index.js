@@ -9,7 +9,6 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./config/swagger");
 
 app.use(express.json());
-// RUTA DE DOCUMENTACIÓN
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/", urlRoutes);
 
