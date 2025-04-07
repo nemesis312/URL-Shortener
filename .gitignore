@@ -37,10 +37,6 @@ frontend/.env.*
 
 # ========== DOCKER ==========
 **/.docker/
-**/Dockerfile
-**/docker-compose.yml
-**/docker-compose.override.yml
-**/pgdata/
 
 # ========== OS-SPECIFIC ==========
 **/.DS_Store

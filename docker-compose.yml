@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: url_shortener_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=host.docker.internal
+      - DB_PORT=5432
+      - DB_USER=admin
+      - DB_PASSWORD=admin
+      - DB_NAME=url_shortener
+      - BASE_URL=http://localhost:3000
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    command: npm run dev
